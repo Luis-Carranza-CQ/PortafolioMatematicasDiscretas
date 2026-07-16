@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Logotipo_de_la_Universidad_Nacional_de_Loja.png" alt="UNL Logo" width="140" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Logotipo_de_la_Universidad_Nacional_de_Loja.png" alt="" width="140" />
 </p>
 
 <h1 align="center">🎓 PORTAFOLIO DIGITAL DE APRENDIZAJE</h1>
