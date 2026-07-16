@@ -8,21 +8,21 @@
   </a>
 </p>
 
-# 🌳 Estructuras de Datos No Lineales: Grafos y Árboles
+# 💻 Estructuras de Datos No Lineales: Grafos y Árboles
 
 > [!NOTE]
-> ### 📖 Introducción Detallada
-> El propósito de este módulo es consolidar y exponer el diseño de algoritmos eficientes capaces de resolver problemas complejos en el desarrollo de software.
+> ### 🔍 Enfoque Académico
+> El análisis, diseño e implementación de las estructuras de datos no lineales constituye un pilar fundamental en la formación de futuros profesionales de la ingeniería.
 > 
-> Mientras que las estructuras lineales (arreglos, listas, pilas) limitan la representación de datos a una sola dimensión secuencial, las **estructuras no lineales** rompen este esquema para modelar relaciones multidimensionales y jerárquicas del mundo real. En este espacio abordamos los fundamentos teóricos, propiedades matemáticas, clasificaciones y aplicaciones de las dos estructuras de datos más icónicas de las Ciencias de la Computación: **Grafos** y **Árboles**.
+> Los ejercicios y casos prácticos desarrollados en este portafolio tienen como finalidad demostrar la aplicación de los conceptos teóricos mediante la resolución de problemas reales, fortaleciendo la comprensión de algoritmos y promoviendo el diseño de sistemas de información eficientes y escalables.
 
 ---
 
-## 🕸️ 1. Estructura y Tipología de Grafos
+## 🌐 1. Estructura y Tipología de Grafos
 
 Un **grafo** es una estructura matemática abstracta diseñada para modelar relaciones de red bidimensionales entre múltiples elementos que interactúan entre sí.
 
-> ### 🧮 Definición Formal
+> ### 📐 Definición Formal
 > $$G = (V, E)$$
 > Donde:
 > * **$V$** representa el conjunto de vértices o nodos.
@@ -32,7 +32,7 @@ Un **grafo** es una estructura matemática abstracta diseñada para modelar rela
   <img width="500" alt="Concepto de Grafo" src="https://github.com/user-attachments/assets/ac3927a8-958b-4b15-b31b-6b229791f6ec" />
 </p>
 
-### ⚙️ Componentes Fundamentales
+### 🛠️ Componentes Fundamentales
 
 | Componente | Símbolo | Definición y Comportamiento | Representación Visual |
 | :--- | :---: | :--- | :---: |
@@ -41,46 +41,42 @@ Un **grafo** es una estructura matemática abstracta diseñada para modelar rela
 
 ---
 
-### 📌 Clasificación y Propiedades de los Grafos
+### 🎛️ Clasificación y Propiedades de los Grafos
 
-#### 1. Grafos Dirigidos (Dígrafos)
+#### 🔗 Grafos Dirigidos (Dígrafos)
 Representan sistemas de flujo donde las relaciones tienen un sentido único y asimétrico de origen a destino.
 
-> [!TIP]
-> **Propiedades Técnicas:**
-> * **Representación formal:** La arista se define como un par ordenado $(u, v)$ donde el camino va estrictamente de $u$ hacia $v$.
-> * **Comportamiento:** Unidireccional $(u \to v \neq v \to u)$.
-> * **Casos de Uso:** Redes de transporte de sentido único, jerarquías de herencia, mapas de dependencias de software o transiciones de estados.
+* **Fórmula:** La arista se define como un par ordenado $(u, v)$ donde el camino va estrictamente de $u$ hacia $v$.
+* **Comportamiento:** Unidireccional $(u \to v \neq v \to u)$.
+* **Casos de Uso:** Redes de transporte de sentido único, jerarquías de herencia, mapas de dependencias de software o transiciones de estados.
 
 <p align="center">
   <img width="320" alt="Grafo Dirigido" src="https://github.com/user-attachments/assets/c1f92558-f627-4fdd-88b1-51d8cccbe4dd" />
 </p>
 
-#### 2. Grafos No Dirigidos
+#### 🔗 Grafos No Dirigidos
 Modelan conexiones simétricas donde la relación es recíproca por naturaleza.
 
-> [!TIP]
-> **Propiedades Técnicas:**
-> * **Representación formal:** La arista se define como un conjunto no ordenado $\{u, v\}$ lo que implica adyacencia mutua.
-> * **Comportamiento:** Bidireccional. Si existe una conexión entre $u$ y $v$, se puede transitar en ambos sentidos libremente.
-> * **Casos de Uso:** Redes sociales de amistad (conexión mutua), topologías de redes físicas (cables de red bidireccionales), o conexiones de transporte de doble sentido.
+* **Fórmula:** La arista se define como un conjunto no ordenado $\{u, v\}$ lo que implica adyacencia mutua.
+* **Comportamiento:** Bidireccional. Si existe una conexión entre $u$ y $v$, se puede transitar en ambos sentidos libremente.
+* **Casos de Uso:** Redes sociales de amistad (conexión mutua), topologías de redes físicas (cables de red bidireccionales), o conexiones de transporte de doble sentido.
 
 <p align="center">
   <img width="260" alt="Grafo No Dirigido" src="https://github.com/user-attachments/assets/d4026878-41bb-493e-a8ec-f8ebfa678111" />
 </p>
 
-#### 3. Grafos Ponderados (Valorados)
-Cada arista posee un peso o etiqueta con un valor numérico asociado. Este valor cuantifica la "dificultad" o "costo" de transitar por esa conexión (como la distancia en kilómetros, el tiempo o el costo económico).
+#### 🔗 Grafos Ponderados (Valorados)
+Cada arista posee un peso o etiqueta con un valor numérico asociado. Este valor cuantifica la "dificultad" o "costo" de transitar por esa conexión.
 
-> [!IMPORTANT]
-> ### 🧭 Algoritmos de Optimización de Rutas
+> [!TIP]
+> ### ⚡ Algoritmos Clave de Optimización de Rutas
 > * **Algoritmo de Dijkstra:** Encuentra el camino más corto desde un nodo origen a todos los demás nodos en grafos con pesos no negativos.
-> * **Algoritmos de Prim y Kruskal:** Determinan el Árbol de Expansión Mínima (MST), es decir, el conjunto de aristas que conecta todos los vértices con el menor peso total posible sin generar ciclos.
+> * **Algoritmos de Prim y Kruskal:** Determinan el Árbol de Expansión Mínima (MST), conectando todos los vértices con el menor peso total posible y sin generar ciclos.
 > * **Algoritmo de Floyd-Warshall:** Resuelve el problema de encontrar los caminos más cortos entre todos los pares de vértices del grafo de una sola vez.
 
 ---
 
-## 🌲 2. Arquitectura de Árboles
+## 🌿 2. Arquitectura de Árboles
 
 Desde la teoría de grafos, un **árbol** es un **grafo conexo y acíclico**. Esto significa que existe un único camino simple para llegar de cualquier nodo a otro y que es imposible formar bucles cerrados o ciclos dentro de su estructura.
 
@@ -90,46 +86,51 @@ Desde la perspectiva del desarrollo de software, representa la organización **j
   <img width="220" alt="Componentes del Árbol" src="https://github.com/user-attachments/assets/88935394-54d2-4ce3-92de-031ca6cee993" />
 </p>
 
-### 🌿 Elementos Constituyentes de la Jerarquía
-* 🌱 **Raíz (Root):** El nodo origen de jerarquía superior del cual descienden todos los demás nodos del árbol. No posee nodos padres.
-* 🌿 **Nodos Internos (Padres/Hijos):** Elementos intermedios del árbol que actúan como bifurcación. Tienen un nodo padre y al menos un nodo hijo.
-* 🍃 **Hojas (Leafs):** Nodos terminales o extremos del árbol que no tienen descendencia (cero hijos).
+### 🔱 Elementos Constituyentes de la Jerarquía
+
+* **⚙️ Raíz (Root):** El nodo origen de jerarquía superior del cual descienden todos los demás nodos del árbol. No posee nodos padres.
+* **⚙️ Nodos Internos (Padres/Hijos):** Elementos intermedios del árbol que actúan como bifurcación. Tienen un nodo padre y al menos un nodo hijo.
+* **⚙️ Hojas (Leafs):** Nodos terminales o extremos del árbol que no tienen descendencia (cero hijos).
 
 ---
 
-### 📌 Taxonomía y Tipos de Árboles
+### 📊 Taxonomía y Tipos de Árboles
 
-#### 1. Árboles Generales ($N$-arios)
+#### ⚡ Árboles Generales ($N$-arios)
 Cada nodo del árbol tiene la libertad de ramificarse en un número ilimitado y variable de nodos hijos.
-* **Usos Comunes:** Sistemas de archivos de sistemas operativos (directorios), organigramas empresariales estructurados y análisis de código HTML/XML (DOM).
+* **Aplicación:** Sistemas de archivos de sistemas operativos (directorios), organigramas empresariales estructurados y análisis de código HTML/XML (DOM).
 
-#### 2. Árboles Binarios
+#### ⚡ Árboles Binarios
 Estructura restringida donde cada nodo puede tener como máximo **dos nodos hijos**, denominados tradicionalmente como subárbol izquierdo y subárbol derecho.
-* **Usos Comunes:** Compresión de datos (Árbol de Huffman) y árboles de decisiones binarias.
+* **Aplicación:** Compresión de datos (Árbol de Huffman) y árboles de decisiones binarias.
 
-#### 3. Árboles Binarios de Búsqueda (BST)
+#### ⚡ Árboles Binarios de Búsqueda (BST)
 Es un árbol binario que implementa una estricta propiedad de ordenamiento para optimizar las consultas y búsquedas de elementos.
 
 > ### ⚖️ Propiedad de Ordenamiento
 > $$\text{Subárbol Izquierdo} < \text{Nodo Padre} < \text{Subárbol Derecho}$$
 
-* **Ventaja:** Permite realizar búsquedas de elementos en tiempo logarítmico $O(\log n)$ en lugar del tiempo lineal $O(n)$ requerido en listas enlazadas tradicionales.
+* **Ventaja clave:** Permite realizar búsquedas de elementos en tiempo logarítmico $O(\log n)$ en lugar del tiempo lineal $O(n)$ requerido en listas enlazadas tradicionales.
 
-#### 4. Árboles AVL (Adelson-Velsky y Landis)
+#### ⚡ Árboles AVL (Adelson-Velsky y Landis)
 Son árboles binarios de búsqueda **auto-balanceados**. Un problema con los BST de tipo convencional es que pueden deformarse en una lista enlazada si los datos se insertan ordenados. El árbol AVL soluciona esto obligándose a mantener equilibrada la altura de sus subárboles.
 
-> [!WARNING]
-> ### ⚖️ Reglas de Autobalanceo (AVL)
-> * **Factor de Equilibrio:** Para cada nodo del árbol, la diferencia de altura entre el subárbol izquierdo y el derecho nunca puede ser mayor que **1**.
-> * **Rotaciones:** Si una inserción o eliminación rompe esta regla, el árbol ejecuta rotaciones automáticas (simples o dobles) para reestructurarse, asegurando siempre un rendimiento de búsqueda óptimo.
+* **Restricción de balanceo:** Para cada nodo del árbol, la diferencia de altura entre el subárbol izquierdo y el derecho (factor de equilibrio) nunca puede ser mayor que **1**.
+* **Rotaciones:** Si una inserción o eliminación rompe esta regla, el árbol ejecuta rotaciones automáticas (simples o dobles) para reestructurarse de forma autónoma, asegurando un rendimiento de búsqueda óptimo.
 
 ---
 
-<p align="center">
-  <a href="./CONTENIDOS.md">
-    <img src="https://img.shields.io/badge/⬅️_Volver_a_Contenidos-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="Regresar" />
-  </a>
-</p>
+## 🔄 Métodos de Recorrido de Árboles
+
+A diferencia de las listas lineales que solo se recorren del inicio al fin, los árboles se pueden explorar de distintas maneras sistemáticas dependiendo de las necesidades del algoritmo:
+
+| Método de Recorrido | Patrón de Flujo Estructurado | Aplicación Práctica Principal |
+| :--- | :---: | :--- |
+| **📥 Preorden** | `[Raíz]` ➔ `[Izquierda]` ➔ `[Derecha]` | Diseñado para **duplicar o clonar** la estructura exacta de un árbol o evaluar expresiones algebraicas. |
+| **🔍 Inorden** | `[Izquierda]` ➔ `[Raíz]` ➔ `[Derecha]` | **En un BST:** Devuelve de forma garantizada todos los elementos ordenados de **menor a mayor**. |
+| **📤 Postorden** | `[Izquierda]` ➔ `[Derecha]` ➔ `[Raíz]` | Ideal para liberar memoria (borrado recursivo de nodos) y calcular el tamaño total de directorios. |
+
+---
 
 # 🎯 Objetivo del Portafolio
 
@@ -231,7 +232,7 @@ En esta sección se encuentran organizadas las actividades desarrolladas durante
 > 
 > <table width="100%">
 >   <tr>
->     <td><b>Estado:</b> <code>COMPLETADO</code></td>
+>     <td><b>Estado:</b> <code>ENTREGADO</code></td>
 >     <td align="right">
 >       <a href="https://drive.google.com/drive/folders/1C9iO0sYRAyfCKzEn0cXHgVuM-QCLw1Iw?usp=sharing">
 >         <img src="https://img.shields.io/badge/🔗_Acceder_a_las_actividades-Drive-34A853?style=for-the-badge&logo=googledrive&logoColor=white" alt="Drive APE" />
@@ -244,3 +245,11 @@ En esta sección se encuentran organizadas las actividades desarrolladas durante
 
 > [!NOTE]
 > **Nota:** Todos los enlaces dirigen a carpetas de Google Drive donde se encuentran almacenados los documentos, informes y demás evidencias correspondientes a cada actividad académica.
+
+---
+
+<p align="center">
+  <a href="./CONTENIDOS.md">
+    <img src="https://img.shields.io/badge/⬅️_Volver_a_Contenidos-1f2328?style=for-the-badge&logo=github&logoColor=white" alt="Regresar" />
+  </a>
+</p>
