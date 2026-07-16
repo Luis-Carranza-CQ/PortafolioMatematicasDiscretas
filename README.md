@@ -26,7 +26,7 @@ PORTAFOLIO DIGITAL DE APRENDIZAJE
 
 | INFORMACIÓN | DETALLES ACADÉMICOS |
 |:-----------:|:-------------------|
-| **Estudiante** | Tu Nombre |
+| **Estudiante** | Luis Anderson Carranza Quispe |
 | **Carrera** | Computación – Primer Ciclo |
 | **Docente** | Ing. Mario Enrique Cueva Hurtado |
 | **Tema** | Grafos y Árboles |
@@ -42,7 +42,7 @@ PORTAFOLIO DIGITAL DE APRENDIZAJE
 
 # 📁
 
-### **[INGRESAR AL PORTAFOLIO](CONTENIDOS/CONTENIDOS.md)**
+### **[INGRESAR AL PORTAFOLIO](UNIDAD 3/CONTENIDOS.md)**
 
 </div>
 
