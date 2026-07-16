@@ -44,17 +44,17 @@ Este repositorio ha sido diseñado como un espacio interactivo para recopilar, e
 
 ## ⚡ Acceso Rápido al Contenido
 
-¿Listo para explorar las unidades de aprendizaje y las actividades prácticas? Haz clic en el botón de abajo para entrar al menú principal.
+¿Listo para explorar las unidades de aprendizaje y las actividades prácticas? Haz clic en el gran botón interactivo de abajo para ingresar al menú de contenidos.
 
 <p align="center">
   <a href="./CONTENIDOS/CONTENIDOS.md">
-    <kbd style="padding: 15px 35px; font-size: 1.2em; font-weight: bold; background-color: #24292e; color: #ffffff; border: 2px solid #0366d6; border-radius: 8px; cursor: pointer; box-shadow: 0px 4px 10px rgba(0,0,0,0.35);">
-      🚀 INGRESAR AL PORTAFOLIO 📂
-    </kbd>
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20INGRESAR%20AL%20PORTAFOLIO%20%F0%9F%93%82-0366d6?style=for-the-badge&logo=github&logoColor=white&labelColor=1f2328" width="450" alt="Botón de Ingreso" />
   </a>
 </p>
 
-<br>
+<p align="center">
+  <sub>👉 Haz clic sobre el botón azul para desplegar el índice de contenidos.</sub>
+</p>
 
 ---
 <p align="center">
